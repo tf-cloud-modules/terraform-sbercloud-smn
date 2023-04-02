@@ -20,3 +20,15 @@ variable "display_name" {
   type        = string
   default     = null
 }
+
+variable "create_subscription" {
+  description = "Determines whether an SMN subscription is created"
+  type        = bool
+  default     = true
+}
+
+variable "subscriptions" {
+  description = "A map of subscription definitions to create"
+  type        = any
+  default     = {}
+}
